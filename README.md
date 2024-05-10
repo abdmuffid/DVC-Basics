@@ -10,7 +10,7 @@ To get started with practicing DVC, follow these simple steps.
 
 ### Prerequisites
 
-Before practicing DVC, please ensure you have the following prerequisites installed.
+Before practicing DVC, please ensure you have the following prerequisites installed:
 
 1. **Python:**
     - For Windows OS
@@ -37,20 +37,20 @@ Before practicing DVC, please ensure you have the following prerequisites instal
 
 ### Tutorial
 
-1. Open terminal or command prompt.
+1. **Open terminal or command prompt.**
 
-2. Set global user configuration for Git:
+2. **Set global user configuration for Git:**
     ```
     git config --global user.name "yourname"
-	  git config --global user.email "youremail@gmail.com"
-  	```
+    git config --global user.email "youremail@gmail.com"
+    ```
 
-3. Create a Python virtual environment:
+3. **Create a Python virtual environment:**
     ```
     python -m venv env
     ```
 
-4. Activate the Python environment:
+4. **Activate the Python environment:**
     - For Windows OS
       ```
       env\Scripts\activate
@@ -60,7 +60,7 @@ Before practicing DVC, please ensure you have the following prerequisites instal
       source env/bin/activate
       ```
 
-5. Initialize the project:
+5. **Initialize the project:**
 
     - Initialize a Git repository.
       ```
@@ -82,7 +82,7 @@ Before practicing DVC, please ensure you have the following prerequisites instal
       git commit -m "Initialize DVC"
       ```
 
-6. Tracking Data:
+6. **Tracking Data:**
 
     - Create a folder for data.
       ```
@@ -102,13 +102,13 @@ Before practicing DVC, please ensure you have the following prerequisites instal
     - Add "data.xml.dvc" and ".gitignore" to Git repository.
       ```
       git add "data\data.xml.dvc" "data\.gitignore"
-	    git commit -m "Add raw data"
+      git commit -m "Add raw data"
       ```
 
     - Doubling the size of the data.
       ```
       copy data/data.xml tmp/data.xml
-	    cat tmp/data.xml >> data/data.xml
+      cat tmp/data.xml >> data/data.xml
       ```
       > Note: First, create the tmp folder using the command `mkdir tmp`.
 
@@ -120,20 +120,22 @@ Before practicing DVC, please ensure you have the following prerequisites instal
     - Revert to the previous data version.
       ```
       git checkout HEAD^1 data/data.xml.dvc
-	    dvc checkout
-	    git commit data/data.xml.dvc -m “Revert dataset updates”
+      dvc checkout
+      git commit data/data.xml.dvc -m “Revert dataset updates”
       ```
       > Note: Use `dvc checkout` to ensure your data files match the state they were in at the previous commit.
 
-7. Git remote repository:
+7. **Git remote repository:**
 
     - Create a new repository on GitHub.
 
     - Push the local repository to the Git repository.
       ```
       git remote add origin https://github.com/abdmuffid/DVC-Basics.git
-  	  git branch -M main
-  	  git push -u origin main
+      git branch -M main
+      git push -u origin main
       ```
 
-8. Retrieve or utilize your own dataset. Follow the provided tutorial to manage the owned dataset.
+8. **Retrieve or utilize your own dataset:**
+
+    Follow the provided tutorial to manage your dataset effectively.
