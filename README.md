@@ -17,6 +17,7 @@ Before practicing DVC, please ensure you have the following prerequisites instal
         ```
         python --version 
         ```
+        
     - For Unix Based OS (Linux, MacOS, etc)
         ```
         python3 --version 
@@ -55,6 +56,7 @@ Before practicing DVC, please ensure you have the following prerequisites instal
       ```
       env\Scripts\activate
       ```
+      
     - For Unix Based OS (Linux, MacOS, etc)
       ```
       source env/bin/activate
